@@ -1,0 +1,71 @@
+What is Lambda Expression:
+    Lambda expression is anonymous function
+    1. Not have any name.
+    2. Not have any modifier.
+    3. Not have any return type
+
+example 1: print Hello
+    normal way:
+        public void methodName(){
+            System.out.println("Hello");
+        }
+
+    Step to convert it to a lambda expression w.r.t. above mentioned steps
+    1. remove name
+    2. remove modifier
+    3. remove return type
+        which leads us to
+        () {
+            System.out.println("Hello");
+        }
+    4. add -> symbol to convert it to lambda function
+        which leads us to
+                () -> {
+                    System.out.println("Hello");
+                }
+        thus our lambda expression.
+
+
+example 2: sum of 2 int value
+    normal way:
+        public int addTwoNum(int a, int b){
+            System.out.println(a+b);
+        }
+
+    Step to convert it to a lambda expression w.r.t. above mentioned steps
+    1. remove name
+    2. remove modifier
+    3. remove return type
+        which leads us to
+        (int a, int b) {
+            System.out.println(a+b);
+        }
+    4. add -> symbol to convert it to lambda function
+        which leads us to
+                () -> {
+                    System.out.println(a+b);
+                }
+        First lambda expression.
+
+example 2: program which return length of a given String
+    normal way:
+        public int getLength(String s){
+            return s.length;
+        }
+
+    Step to convert it to a lambda expression w.r.t. above mentioned steps
+    1. remove name
+    2. remove modifier
+    3. remove return type
+        which leads us to
+        (String s) {
+            return s.length;
+        }
+    4. add -> symbol to convert it to lambda function
+        which leads us to
+                (String s) -> {
+                    return s.length;
+                }
+
+        First lambda expression.
+

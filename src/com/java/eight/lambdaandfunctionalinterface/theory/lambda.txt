@@ -1,0 +1,10 @@
+Languages using lambda before java:
+    lisp is first language to use lambda expression
+    some other languages using lambda are c, c++, objective c, c#.net, scala ...
+
+Benefits of using java 8.
+    1. To enable functional programing
+    2. To right more readable, maintainable and concise code.
+    3. To use API very effectively.
+    4. To enable parallel programing.
+
