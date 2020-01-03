@@ -1,0 +1,24 @@
+Rules of Lambda
+
+Rule 1. If body of lambda expression contains one line the {} are option ans should be removed
+
+        thus example 1 () -> { System.out.println("Hello") } thus our lambda expression becomes
+             () -> System.out.println("Hello")
+
+
+Rule 2. Some time based on context compiler can guess the type of method which is known as type inference
+
+        thus example 2 (int a, int b) -> { System.out.println(a + b) } thus our lambda expression becomes applying  rule 1 and 2
+                     (a, b) -> System.out.println(a+b)
+
+
+Rule 3. We do not requires to write "return" if lambda contains only one line body
+
+           thus example 3 (String s) -> { return s.length()} thus our lambda expression becomes applying  rule 1, 2 and 3
+                        (s) ->  s.length
+
+
+Rule 4. If lambda Expression contains only one input value we can remove ()
+
+           thus example 3 (String s) -> { return s.length()} thus our lambda expression becomes applying  rule 1, 2, 3 and 4
+                        s ->  s.length

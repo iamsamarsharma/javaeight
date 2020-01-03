@@ -1,3 +1,5 @@
 1. introduction
 2. lambda
 3. HowToWriteLambdaExpression
+4. FewRulesOfLambda
+5. Functional Interface.
