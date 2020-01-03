@@ -1,0 +1,32 @@
+FunctionalInterface:
+If interface contain only one abstract method then it is functional interface.
+
+Some functional interface already present in jave before java8 are
+    runnable --> run()
+    callable -->  call()
+    ActionListener --> actionPerformed()
+    comparable --> compareTo()
+
+A functional interface we can have any no.
+
+eg. : interface one {
+            public void m1();
+            default void m2(){
+                ...
+                ...
+            }
+            public static void m3() {
+                .
+                ........
+                .............
+            }
+        }
+
+
+@FunctionalInterface annotation:
+To indicate that interface is functional interface java introduce @FunctionalInterface. This annotation is optional
+Advantage of using this annotation if someone accidentally add new abstract method in previously created functional interface
+compiler will give an error.
+
+If a interface is marked as @Functional interface it can't be empty it must contain one abstract method.
+CE: No abstract method found in interface <interface name>

@@ -4,6 +4,8 @@ What is Lambda Expression:
     2. Not have any modifier.
     3. Not have any return type
 
+Type of Lambda is functional interface
+
 example 1: print Hello
     normal way:
         public void methodName(){

@@ -2,4 +2,8 @@
 2. lambda
 3. HowToWriteLambdaExpression
 4. FewRulesOfLambda
-5. Functional Interface.
+5. CharacteristicsOfLambdaExpression
+6. howToCallLambdaexpression
+7. FunctionalInterface
+8. @FunctionalInterfaceWithInheritance
+9. InvokingLambdaInterfaceWithFunctionalInterface

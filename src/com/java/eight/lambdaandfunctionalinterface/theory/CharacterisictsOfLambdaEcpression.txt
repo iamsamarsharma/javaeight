@@ -1,0 +1,28 @@
+Characteristics/properties of lambda expressions:
+
+1. Lambda expression can have any no. of parameters
+        eg.: ()->sout("hello");
+             (s) -> s.length;
+             (a,b) -> sout(a+b);
+
+2.if multiple parameters are available then these parameters should be separated with ",".
+        eg.: (a,b) -> sout(a+b);
+
+3. If only one parameter is available the parentheses "()" are optional and should be removed
+        eg.: s -> s.length;
+
+4. Usually we can specify the type of parameter , but if compiler can guess the types via type inference the we can remove the type.
+        eg.: (a,b) -> sout(a+b);
+
+5. Lambda expression body can have any no. of statement and in this case it should be inside "{}"
+        eg.: {
+            ......
+            .......
+            ........
+        }
+
+6. If lambda expression body have only ont statement and in this case "{}" are optional ans should be removed.
+        eg.: ()->sout("hello");
+
+6. If lambda expression body have only ont statement and return something in this case "{}" and return keyword are optional ans should be removed.
+        eg.: s -> s.length;

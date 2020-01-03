@@ -1,0 +1,3 @@
+How can we call lambda expression in our program.
+
+To invoke lambda function we require functional interface.

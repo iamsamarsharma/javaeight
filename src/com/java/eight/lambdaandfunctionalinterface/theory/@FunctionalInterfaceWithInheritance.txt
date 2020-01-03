@@ -1,0 +1,60 @@
+@ Functional Interface with respect to Inheritance
+
+Case 1:
+ If parent in functional interface and child is also functional interface but do not contain any abstract method the its valid
+ functional interface.
+    eg:
+        @FunctionalInterface
+        interface parentInterface {
+            public void m1()
+        }
+
+        @FunctionalInterface
+        interface childInterface extends parentInterface {
+
+        }
+
+Case 2:
+ If parent in functional interface and child is also functional interface but have contain abstract method of same name then the its valid
+ functional interface.
+     eg:
+         @FunctionalInterface
+         interface parentInterface {
+             public void m1()
+         }
+
+         @FunctionalInterface
+         interface childInterface extends parentInterface {
+             public void m1()
+         }
+
+Case 3:
+ If parent in functional interface and child is also functional interface but have contain abstract method of different name then the its invalid
+  functional interface.
+     eg:
+              @FunctionalInterface
+              interface parentInterface {
+                  public void m1()
+              }
+
+              @FunctionalInterface
+              interface childInterface extends parentInterface {
+                  public void m2()
+              }
+
+     compile time error: Unaccepted @FunctionalInterface
+                             Multiple non-overriding abstract methods found in interface
+
+Case 4:
+ If parent in functional interface and child is not functional interface but have contain abstract method of different name then the its valid
+   functional interface.
+    eg:
+                  @FunctionalInterface
+                  interface parentInterface {
+                      public void m1()
+                  }
+
+
+                  interface childInterface extends parentInterface {
+                      public void m2()
+                  }
