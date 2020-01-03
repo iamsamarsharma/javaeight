@@ -1,0 +1,12 @@
+new in java 8:
+1. lambda expression.
+2. Functional Interfaces.
+3. default method in interface i.e concrete methods inside interface.
+4. static method inside interfaces.
+5. Standard pre defined functional interface.
+    5.1 Predicate
+    5.2 Function
+    5.3 Consumers
+6. :: operator i.e method reference & constructor reference.
+7. Streams or streams API
+8. Date and Time API from joda.org
