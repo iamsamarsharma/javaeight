@@ -10,3 +10,9 @@ new in java 8:
 6. :: operator i.e method reference & constructor reference.
 7. Streams or streams API.
 8. Date and Time API from joda.org.
+
+
+Why these Changes:
+1. Simplify programing.
+2. to utilise functional programing .
+3. to utilize multicore programing/parallel processing with the help of parallel streams.
